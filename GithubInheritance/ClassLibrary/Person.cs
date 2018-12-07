@@ -8,8 +8,8 @@ namespace ClassLibrary
 {
     public class Person
     {
-        private string name;
-        private int age;
+        protected string name;
+        protected int age;
 
         public Person(string name, int age)
         {
@@ -26,15 +26,32 @@ namespace ClassLibrary
         public virtual int Age
         {
             get => age;
-            protected set => age = value;
+            protected set
+            {
+                try
+                {
+                    if (value < 0)
+                    {
+                        throw new ArgumentException("Age can't be negative!");
+                    }
+
+                    age = value;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
+            }
         }
 
-        public void Introduce()
+
+        public virtual void Introduce()
         {
             Console.WriteLine($"Heyo, my name is {name} and I am {age} years old.");
         }
 
-        public void Walk()
+        public virtual void Walk()
         {
             Console.WriteLine("I am walking, because I'm grown-up.");
         }

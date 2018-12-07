@@ -12,5 +12,38 @@ namespace ClassLibrary
         {
         }
 
+        public override string Name { get; protected set; }
+
+        public override int Age
+        {
+            get => age;
+            protected set
+            {
+                try
+                {
+                    if (value > 15)
+                    {
+                        throw new ArgumentException("You don't seem to be child.");
+                    }
+
+                    age = value;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
+            }
+        }
+
+        public override void Introduce()
+        {
+            Console.WriteLine($"Hey, my name is {Name}");
+        }
+
+        public override void Walk()
+        {
+            Console.WriteLine("I'm crawling because I am just a child");
+        }
     }
 }
