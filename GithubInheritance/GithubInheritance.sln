@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubInheritance", "GithubInheritance\GithubInheritance.csproj", "{83CDDF5B-0C39-4859-9CE6-946C92010CAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{6AE98C56-1F44-45DA-A0FB-1BB1B7F847F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{83CDDF5B-0C39-4859-9CE6-946C92010CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83CDDF5B-0C39-4859-9CE6-946C92010CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83CDDF5B-0C39-4859-9CE6-946C92010CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE98C56-1F44-45DA-A0FB-1BB1B7F847F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE98C56-1F44-45DA-A0FB-1BB1B7F847F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE98C56-1F44-45DA-A0FB-1BB1B7F847F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE98C56-1F44-45DA-A0FB-1BB1B7F847F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

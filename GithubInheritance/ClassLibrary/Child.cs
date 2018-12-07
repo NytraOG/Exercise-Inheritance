@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GithubInheritance
+namespace ClassLibrary
 {
-    class Program
+    public class Child : Person
     {
-        static void Main(string[] args)
+        public Child(string name, int age) : base(name, age)
         {
-
         }
+
     }
 }
